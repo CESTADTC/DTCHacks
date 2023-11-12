@@ -10,12 +10,24 @@ const DownloadCV: FC = () => {
   const redirectToGoogleForms = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
-    // Prevent the default behavior of the anchor tag
-    event.preventDefault();
 
-    // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
-    window.location.href =
-      'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
+    const googleFormsUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
+    const newWindow = window.open(googleFormsUrl, "_blank")
+
+    if(newWindow){
+      event.preventDefault();
+    }
+
+
+    // onClick event preventing the default behavior, which is interfering with the new tab opening
+
+    
+    // Prevent the default behavior of the anchor tag
+    // event.preventDefault();
+
+    // // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
+    // window.location.href =
+    //   'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
   };
 
   // Return JSX with the "Join Us" button
