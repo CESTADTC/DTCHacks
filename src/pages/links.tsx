@@ -18,7 +18,7 @@ const Links: NextPage = () => {
       <div className="mx-auto w-full max-w-4xl py-8 text-center md:py-20">
         <div className="relative mx-auto aspect-square w-32 overflow-hidden rounded-full outline-primary md:w-52">
           <Image
-            src="https://github.com/ishqdehlvi"
+            src="/assets/images/dtc-log1.png"
             layout="fill"
             alt="ishqdehlvi"
           />
