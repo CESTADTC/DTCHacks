@@ -27,6 +27,7 @@ const DownloadCV: FC = () => {
       rel="noreferrer"
       onClick={redirectToGoogleForms}
     >
+      
       <div
         className={
           'relative mx-auto mt-36 aspect-square h-56 rounded-full border-2 border-white text-primary md:mt-16 lg:mt-28 lg:h-72 xl:mt-16'
