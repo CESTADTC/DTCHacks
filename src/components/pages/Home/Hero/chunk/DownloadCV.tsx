@@ -7,12 +7,15 @@ import styles from '../Home.module.css';
 // Main component
 const DownloadCV: FC = () => {
   // Function to redirect to Google Forms link
-  const redirectToGoogleForms = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const redirectToGoogleForms = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     // Prevent the default behavior of the anchor tag
     event.preventDefault();
 
     // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
-    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
+    window.location.href =
+      'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
   };
 
   // Return JSX with the "Join Us" button
@@ -30,7 +33,7 @@ const DownloadCV: FC = () => {
         }
       >
         {/* Background text `</>` */}
-        <div className="background absolute top-0 left-0 z-10 flex h-full w-full -rotate-45 items-center justify-center text-[13rem] font-black opacity-20 ">
+        <div className="background absolute left-0 top-0 z-10 flex h-full w-full -rotate-45 items-center justify-center text-[13rem] font-black opacity-20 ">
           {'</>'}
         </div>
 
@@ -38,11 +41,11 @@ const DownloadCV: FC = () => {
         <AnimatedText
           as="div"
           className="hoverBox 0 absolute z-50 flex h-full w-full cursor-pointer items-center justify-center text-center transition-all duration-500 "
-          text={'< Join Us />'}
+          text={'< Register Now />'}
         />
 
         {/* Box that pops */}
-        <div className="popBox absolute top-1/2 left-1/2 z-10 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-500"></div>
+        <div className="popBox absolute left-1/2 top-1/2 z-10 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-500"></div>
 
         {/* Spinner components */}
         <Arc runnong_time={2000} style={styles.arc_2} />
