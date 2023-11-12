@@ -36,8 +36,6 @@ Step into the future with our Gen-AI and AI/ML track. From artificial intelligen
 
 Choose your track wisely, and let the hacking begin! ✨
 
-**Save the Date:** November 12, 2023
-
 ---
 
 ## Installation
@@ -46,12 +44,12 @@ Choose your track wisely, and let the hacking begin! ✨
 
     bash
 
-- `git clone https://github.com/dtchacks/hackathon.git`
+- `git clone https://github.com/CESTADTC/DTCHacks.git`
 - Install dependencies
 
   bash
 
-- `cd hackathon
+- `cd DTCHacks
 npm install`
 - Run the development server
 
