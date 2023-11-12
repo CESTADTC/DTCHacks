@@ -11,6 +11,15 @@ const AppIcons = [
   { path: '/assets/icons/vercel.svg', name: 'vercel', key: 10 },
   { path: '/assets/icons/Github.svg', name: 'Github', key: 11 },
   { path: '/assets/icons/vscode.png', name: 'Vscode', key: 12 },
+  { path: '/assets/icons/react.svg', name: 'React JS', key: 13 },
+  { path: '/assets/icons/tailwindcss.svg', name: 'TailwindCSS', key: 14 },
+  { path: '/assets/icons/javascript.svg', name: 'Javascript', key: 15 },
+  { path: '/assets/icons/sass.svg', name: 'SASS', key: 16 },
+  { path: '/assets/icons/nodejs.svg', name: 'Node JS', key: 17 },
+  { path: '/assets/icons/figma.svg', name: 'Figma', key: 18 },
+  { path: '/assets/icons/git.svg', name: 'Git', key: 19 },
+  { path: '/assets/icons/vercel.svg', name: 'vercel', key: 20 },
+
 ];
 
 export default AppIcons;

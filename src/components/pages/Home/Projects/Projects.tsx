@@ -25,11 +25,7 @@ const Projects: FC = () => {
     >
       <div className="flex items-center justify-center">
         <Heading2>
-          {isVisible ? (
-            <AnimatedText text="Tracks" setMinWidth={false} />
-          ) : (
-            ''
-          )}
+          {isVisible ? <AnimatedText text="Tracks" setMinWidth={false} /> : ''}
         </Heading2>
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:py-16">
@@ -38,48 +34,38 @@ const Projects: FC = () => {
             className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
           >
             <Image
-              src="/assets/images/filmpireHome.png"
+              src="/assets/images/social-wellbeing.jpg"
               alt="HeroImg"
-              className="rounded-full object-cover object-left-top"
+              className="rounded-full object-cover "
               layout="fill"
             />
-            <figure className="absolute left-1/2 bottom-16 -translate-x-1/2 rounded-2xl bg-base-100 px-2 py-1 transition-all duration-300 ">
-              <div className="relative h-20 w-56">
-                <Image
-                  src={'/assets/images/filmpire-logo.png'}
-                  layout="fill"
-                  alt="project logo"
-                  style={{
-                    filter: 'hue-rotate(129deg) brightness(10)',
-                  }}
-                />
-              </div>
-            </figure>
-            <div className="absolute top-1/2 left-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
+            <div className="absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
             <div
-              className={`${styles.projectImgRing} absolute top-1/2 left-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+              className={`${styles.projectImgRing} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
             />
             <div
-              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute top-1/2 left-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
             />
             <div
-              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute top-1/2 left-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
             />
             <div
-              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute top-1/2 left-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
             />
           </figure>
         </div>
-        <div className="relative block w-full py-7 pr-3 pl-10 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
+        <div className="relative block w-full py-7 pl-10 pr-3 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
           <span className="block text-center font-RobotoCondensed text-5xl font-bold tracking-wider text-primary lg:text-left lg:text-7xl">
-            Filmpire
+            Social Wellbeing (Healthcare, Environment, and Energy)
           </span>
           <p className="mt-5 text-xl leading-relaxed lg:text-2xl">
-            Filmpire is movie app where you can search for movie and add to
-            watchlist and Favorite's. You get the recommendation for the similar
-            movies and you have option to get movies by genre with the TMDB API.
+            Dive into the realm of impact with our Social Wellbeing track.
+            Whether you're passionate about revolutionizing healthcare,
+            addressing environmental challenges, or innovating in the energy
+            sector,this track is your canvas. Let your ideas spark positive
+            change and contribute to a better world.
           </p>
-          <span className="mt-5 mb-10 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
+          <span className="mb-10 mt-5 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
             {['text', 'text', 'text', 'text'].map((tool) => (
               <span
                 key={tool}
@@ -89,48 +75,205 @@ const Projects: FC = () => {
               </span>
             ))}
           </span>
-          {/* <div className="flex flex-wrap gap-4 gap-x-2 text-sm lg:gap-0 lg:text-xl">
-            <a
-              href="https://filmpirecp.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-max rounded-xl border border-primary py-3 px-5 capitalize hover:bg-primary lg:rounded-none lg:rounded-l-xl"
-            >
-              <span className="flex items-center justify-center gap-3 text-primary group-hover:text-base-100">
-                Live
-                <span className="w-5 lg:w-6">
-                  <GlobeIcon />
-                </span>
-              </span>
-            </a>
-            <a
-              href="https://github.com/Chandraprakash-Darji/filmpire_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-max rounded-xl border border-primary py-3 px-5 capitalize hover:bg-primary lg:rounded-none"
-            >
-              <span className="flex items-center justify-center gap-3 text-primary group-hover:text-base-100">
-                Project Code
-                <span className="w-6">
-                  <GithubIcon />
-                </span>
-              </span>
-            </a>
-            <button
-              // href="/projects/filmpire"
-              className="group w-max rounded-xl border border-primary py-3 px-5 capitalize hover:bg-primary disabled:cursor-not-allowed  disabled:hover:border-primary disabled:hover:bg-transparent disabled:hover:opacity-50 lg:rounded-none lg:rounded-r-xl"
-              disabled
-            >
-              <span className="flex items-center justify-center gap-3 text-primary group-hover:text-base-100 group-disabled:group-hover:text-primary">
-                Read more
-                <span className="w-6">
-                  <AltIcon />
-                </span>
-              </span>
-            </button>
-          </div> */}
         </div>
       </div>
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:py-16">
+        <div className="w-full">
+          <figure
+            className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
+          >
+            <Image
+              src="/assets/images/innovation.jpg"
+              alt="HeroImg"
+              className="rounded-full object-cover"
+              layout="fill"
+            />
+            <div className="absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
+            <div
+              className={`${styles.projectImgRing} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+          </figure>
+        </div>
+        <div className="relative block w-full py-7 pl-10 pr-3 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
+          <span className="block text-center font-RobotoCondensed text-5xl font-bold tracking-wider text-primary lg:text-left lg:text-7xl">
+            Open Innovation
+          </span>
+          <p className="mt-5 text-xl leading-relaxed lg:text-2xl">
+            Unleash your creativity and problem-solving skills in the Open
+            Innovation track. Here, there are no limits—your imagination is the
+            only boundary. From groundbreaking apps to revolutionary algorithms,
+            this track welcomes all innovations that redefine the way we live,
+            work, and connect.
+          </p>
+          <span className="mb-10 mt-5 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
+            {['text', 'text', 'text', 'text'].map((tool) => (
+              <span
+                key={tool}
+                className="rounded-lg border border-primary p-2 px-3 font-bold capitalize hover:bg-primary hover:text-base-100"
+              >
+                {tool}
+              </span>
+            ))}
+          </span>
+        </div>
+      </div>
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:py-16">
+        <div className="w-full">
+          <figure
+            className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
+          >
+            <Image
+              src="/assets/images/blockchain.png"
+              alt="HeroImg"
+              className="rounded-full object-cover "
+              layout="fill"
+            />
+            <div className="absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
+            <div
+              className={`${styles.projectImgRing} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+          </figure>
+        </div>
+        <div className="relative block w-full py-7 pl-10 pr-3 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
+          <span className="block text-center font-RobotoCondensed text-5xl font-bold tracking-wider text-primary lg:text-left lg:text-7xl">
+            Blockchain and Web 3.0
+          </span>
+          <p className="mt-5 text-xl leading-relaxed lg:text-2xl">
+            Embark on a journey into the decentralized future with our
+            Blockchain and Web 3.0 track. Explore the possibilities of
+            blockchain technology and the next generation of the web. Whether
+            you're a blockchain enthusiast or a web development wizard, this
+            track invites you to shape the digital landscape.
+          </p>
+          <span className="mb-10 mt-5 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
+            {['text', 'text', 'text', 'text'].map((tool) => (
+              <span
+                key={tool}
+                className="rounded-lg border border-primary p-2 px-3 font-bold capitalize hover:bg-primary hover:text-base-100"
+              >
+                {tool}
+              </span>
+            ))}
+          </span>
+        </div>
+      </div>
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:py-16">
+        <div className="w-full">
+          <figure
+            className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
+          >
+            <Image
+              src="/assets/images/fintech.png"
+              alt="HeroImg"
+              className="rounded-full object-cover "
+              layout="fill"
+            />
+            <div className="absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
+            <div
+              className={`${styles.projectImgRing} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+          </figure>
+        </div>
+        <div className="relative block w-full py-7 pl-10 pr-3 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
+          <span className="block text-center font-RobotoCondensed text-5xl font-bold tracking-wider text-primary lg:text-left lg:text-7xl">
+            Tech to Modernize (Edtech, Fintech)
+          </span>
+          <p className="mt-5 text-xl leading-relaxed lg:text-2xl">
+            Join the wave of technological modernization in our Edtech and
+            Fintech track. Revolutionize education with innovative solutions or
+            reshape the financial landscape with cutting-edge fintech ideas.
+            It's time to bring tech to the forefront of modernization in these
+            crucial sectors
+          </p>
+          <span className="mb-10 mt-5 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
+            {['text', 'text', 'text', 'text'].map((tool) => (
+              <span
+                key={tool}
+                className="rounded-lg border border-primary p-2 px-3 font-bold capitalize hover:bg-primary hover:text-base-100"
+              >
+                {tool}
+              </span>
+            ))}
+          </span>
+        </div>
+      </div>
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:py-16">
+        <div className="w-full">
+          <figure
+            className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
+          >
+            <Image
+              src="/assets/images/ai.png"
+              alt="HeroImg"
+              className="rounded-full object-cover "
+              layout="fill"
+            />
+            <div className="absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4" />
+            <div
+              className={`${styles.projectImgRing} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_1} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_2} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+            <div
+              className={`${styles.projectImgRing} ${styles.projectImgRing_3} absolute left-1/2 top-1/2 aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full border-4`}
+            />
+          </figure>
+        </div>
+        <div className="relative block w-full py-7 pl-10 pr-3 before:absolute before:left-0 before:-translate-y-full before:text-base before:font-normal before:not-italic before:text-base-200 before:content-['<h3>'] after:absolute after:bottom-0 after:left-0 after:text-base after:font-normal after:not-italic after:text-base-200 after:content-['</h3>'] md:text-4xl md:before:text-lg md:after:text-lg lg:pr-0">
+          <span className="block text-center font-RobotoCondensed text-5xl font-bold tracking-wider text-primary lg:text-left lg:text-7xl">
+            Gen-AI and AI/ML
+          </span>
+          <p className="mt-5 text-xl leading-relaxed lg:text-2xl">
+            Step into the future with our Gen-AI and AI/ML track. From
+            artificial intelligence to machine learning, this track is for those
+            fascinated by the power of algorithms. Explore the possibilities of
+            AI in shaping industries, solving complex problems, and pushing the
+            boundaries of what's achievable.
+          </p>
+          <span className="mb-10 mt-5 flex flex-wrap gap-4 text-sm text-primary lg:text-xl">
+            {['text', 'text', 'text', 'text'].map((tool) => (
+              <span
+                key={tool}
+                className="rounded-lg border border-primary p-2 px-3 font-bold capitalize hover:bg-primary hover:text-base-100"
+              >
+                {tool}
+              </span>
+            ))}
+          </span>
+        </div>
+      </div>
+
       <div className="flex items-center justify-between px-5 lg:m-20 lg:px-16 xl:px-32">
         <button
           disabled
@@ -155,7 +298,7 @@ const Projects: FC = () => {
 
         <div className="relative mx-auto h-2 w-[35vw] overflow-hidden rounded-3xl bg-primary/20">
           <div
-            className="absolute top-0 left-0 h-full bg-primary transition-all duration-300"
+            className="absolute left-0 top-0 h-full bg-primary transition-all duration-300"
             style={{
               width: `${((currentproject + 1) / projectList.length) * 100}%`,
             }}
@@ -175,7 +318,7 @@ const Projects: FC = () => {
           </span>
         </button>
       </div>
-      <div className="absolute left-[48%] -bottom-[20rem] -z-10 hidden outline-none lg:block">
+      <div className="absolute -bottom-[20rem] left-[48%] -z-10 hidden outline-none lg:block">
         <ProjectCurve />
       </div>
     </section>
