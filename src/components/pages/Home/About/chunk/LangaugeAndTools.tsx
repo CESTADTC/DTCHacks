@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { ToolIcon } from '..';
 import AppIcons from '../../../../../lib/data/AppIcons';
 import Heading3 from '../../../../widget/Headings/Heading3';
@@ -34,13 +34,13 @@ const LangaugeAndTools: FC = () => {
       </Heading3>
 
       <div className="mt-5 p-3 pl-0" style={{ height: '440px' }}>
-        <div ref={scrollContainerRef} className='overflow-y-auto h-full'>
-        <ul className=" flex flex-wrap justify-center gap-12 md:gap-7">
-          {AppIcons.map(({ key, path, name }) => (
-            <ToolIcon key={key} path={path} name={name} />
-          ))}
-        </ul>
-        </div> 
+        <div ref={scrollContainerRef} className="h-full overflow-y-auto">
+          <ul className=" flex flex-wrap justify-center gap-12 md:gap-7">
+            {AppIcons.map(({ key, path, name }) => (
+              <ToolIcon key={key} path={path} name={name} />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
