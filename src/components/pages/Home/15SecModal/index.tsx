@@ -40,15 +40,12 @@ const SecModal: FC<{ handleClose: () => void }> = ({ handleClose }) => {
             ))}
           </div>
         </div>
-        <Heading2>WOW</Heading2>
+        <Heading2>WELCOME</Heading2>
         <p className="text-primary before:text-base-200 before:content-['<p>_'] after:text-base-200 after:content-['</p>'] md:text-lg">
           You have been on these page for last 15 seconds. Thank you{' '}
         </p>
         <p className="mt-10 max-w-2xl text-sm">
-          <span className="text-primary">fact: </span> You can get the attention
-          of the user in 15 seconds. If it bounces back early then you are not
-          able to get attention. Thanks for being here for more than 15 sec
-          let's have coffee and a session:
+          <span className="text-primary">NOTE: </span> Are you a student at DELHI TECHNICAL CAMPUS? If not, ahh sorry, you're a little bit early. We are organizing a hackathon for inter-college students in upcoming February. This Hackathon is just for the students of Delhi Technical Campus. Stay Tuned!!
           <br />
           <br />
           <a
