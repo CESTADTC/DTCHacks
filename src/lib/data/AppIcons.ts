@@ -4,8 +4,8 @@ const AppIcons = [
   { path: '/assets/icons/inzemam.jpg', name: 'Inzemamul Haq', key: 2 },
   { path: '/assets/icons/manjeet.jpeg', name: 'Manjeet', key: 4 },
   { path: '/assets/icons/Shristi.jpg', name: 'Shristi', key: 1 },
+  { path: '/assets/icons/sandesh.jpeg', name: 'Sandesh', key: 7 },
   { path: '/assets/icons/Shagun.jpg', name: 'Shagun', key: 6 },
-  { path: '/assets/icons/Upasana.jpeg', name: 'Upasana Mam', key: 7 },
   { path: '/assets/icons/affan.webp', name: 'Affan Alam', key: 8 },
   { path: '/assets/icons/Ayush.jpeg', name: 'Ayush Verma', key: 9 },
   { path: '/assets/icons/simran.jpg', name: 'Simran', key: 10 },
@@ -25,6 +25,7 @@ const AppIcons = [
   { path: '/assets/icons/jai.jpg', name: 'Jai Kumar', key: 25 },
   { path: '/assets/icons/kartick.jpg', name: 'Kartick Chauhaan', key: 24 },
   { path: '/assets/icons/kartikS.jpg', name: 'Kartik Sharma', key: 26 },
+  { path: '/assets/icons/nikhil.jpg', name: 'Nikhil', key: 27 },
 
 ];
 
