@@ -33,7 +33,7 @@ const LangaugeAndTools: FC = () => {
         <span className="text-primary"> Scenario</span>{' '}
       </Heading3>
 
-      <div className="mt-5 p-3 pl-0">
+      <div className="mt-5 p-3 pl-0" style={{ height: '800px' }}>
         <div ref={scrollContainerRef} className="h-full overflow-y-auto">
           <ul className=" flex flex-wrap justify-center gap-12 md:gap-7">
             {AppIcons.map(({ key, path, name }) => (
