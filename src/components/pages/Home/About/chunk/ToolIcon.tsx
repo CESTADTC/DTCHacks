@@ -14,7 +14,7 @@ const ToolIcon: FC<ToolIconProps> = ({ name, path }) => {
     >
       <div className="aspect-square w-20 p-4 transition-all duration-200 group-hover:p-4 sm:p-0 sm:group-hover:p-2 ">
         <div className="relative flex aspect-auto h-full w-full items-center justify-center">
-          <Image src={path} alt={name} layout="fill" />
+          <Image src={path} alt={name} layout="fill" className='object-cover' />
         </div>
       </div>
       <div className="absolute top-3/4 z-20 overflow-hidden whitespace-nowrap rounded-lg bg-primary px-2 py-1 font-bold text-base-100 transition-all duration-300  group-hover:scale-100 group-hover:opacity-100 md:scale-0">
