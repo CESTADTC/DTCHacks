@@ -18,7 +18,7 @@ const AppIcons = [
   { path: '/assets/icons/Sahil.jpg', name: 'Sahil', key: 17 },
   { path: '/assets/icons/Shivam.jpg', name: 'Shivam', key: 18 },
   { path: '/assets/icons/Shivansh.jpg', name: 'Shivansh', key: 19 },
-  { path: '/assets/icons/Sneha.jpeg', name: 'Senha Pandey', key: 20 },
+  { path: '/assets/icons/Sneha.jpeg', name: 'Sneha Pandey', key: 20 },
   { path: '/assets/icons/Vineet.jpg', name: 'Vineet Panwar', key: 21 },
   { path: '/assets/icons/anchal.png', name: 'Anchal Tiwari', key: 22 },
   { path: '/assets/icons/harsh.jpg', name: 'Harsh', key: 23 },
