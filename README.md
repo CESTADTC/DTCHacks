@@ -1,4 +1,4 @@
-# DTC Hackathon - DTCHACKS
+# DTC Hackathon - DTCHacks
 
 ## Welcome to the Exclusive DTC Hackathon!
 
