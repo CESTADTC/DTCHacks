@@ -1,7 +1,7 @@
 const AppIcons = [
   { path: '/assets/icons/arman.jpg', name: 'Arman Mansury', key: 3 },
-  { path: '/assets/icons/Jaseem.png', name: 'Jaseemuddin', key: 5 },
   { path: '/assets/icons/sandesh.jpeg', name: 'Sandesh', key: 7 },
+  { path: '/assets/icons/Jaseem.png', name: 'Jaseemuddin', key: 5 },
   { path: '/assets/icons/inzemam.jpg', name: 'Inzemamul Haq', key: 2 },
   { path: '/assets/icons/manjeet.jpeg', name: 'Manjeet', key: 4 },
   { path: '/assets/icons/Shristi.jpg', name: 'Shristi', key: 1 },
