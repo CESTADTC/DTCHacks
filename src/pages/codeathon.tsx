@@ -19,7 +19,7 @@ const Landing: NextPage = () => {
     <div className="relative min-h-screen overflow-x-hidden font-mono">
       <div className="layout">
         <Head>
-          <title>Internal Hackathon | Delhi Technical Campus</title>
+          <title>Codeathon | Delhi Technical Campus</title>
         </Head>
         <Navbar />
         <main>

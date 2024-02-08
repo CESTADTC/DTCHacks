@@ -16,12 +16,12 @@ export const menuOptions = [
   {
     id: 102,
     text: '//02 <AboutUs/>',
-    href: '#aboutme',
+    href: '#aboutus',
   },
   {
     id: 103,
     text: '//03 <Tracks/>',
-    href: '#myportfolio',
+    href: '#tracks',
   },
 
   {
