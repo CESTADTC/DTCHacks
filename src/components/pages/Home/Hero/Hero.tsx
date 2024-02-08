@@ -20,7 +20,7 @@ const Hero: FC = () => {
       <div className="flex flex-col gap-3 pl-3 md:gap-5 lg:gap-10">
         <AnimatedText
           className="text-primary md:text-xl lg:text-2xl xl:text-3xl "
-          text="Exclusively for DTC students"
+          text="Exclusively for Students"
           as={'p'}
           sudoClassName="before:text-base-200 before:content-['<p>_'] after:text-base-200 after:content-['_</p>']"
         />
@@ -29,7 +29,7 @@ const Hero: FC = () => {
           <span className="hidden outline-none md:inline">
             <br />
           </span>
-          Hackathon
+          Code-A-Thon
         </h1>
         <AnimatedText
           as="p"

@@ -29,7 +29,7 @@ const HomePage = () => {
             happen and are related to what we are working on.
           </p>
           <Link
-            href="/portfolio"
+            href="/codeathon"
             className="px-8 relative group text-2xl uppercase font-bold py-4 mt-16 border border-primary font-['Big Shoulders Display'] text-primary hover:text-white w-max block mx-auto lg:mx-0"
           >
             <span className="relative z-20">ENTER THE SYSTEM</span>

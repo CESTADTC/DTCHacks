@@ -10,7 +10,7 @@ const About: FC = () => {
   const isInView = useInView(ref, { once: true });
   return (
     <section
-      id="aboutme"
+      id="aboutus"
       ref={ref}
       className={`relative mx-auto mt-10 transition-transform duration-500 ease-linear md:mt-36 xl:mt-72 ${
         isInView ? 'translate-x-0' : 'translate-y-36 opacity-0'

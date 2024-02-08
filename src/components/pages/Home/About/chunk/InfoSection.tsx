@@ -13,11 +13,11 @@ const InfoSection: FC = () => {
       <article className="relative space-y-5 before:block before:-translate-x-8 before:font-mono before:text-lg before:font-normal before:not-italic before:text-base-200 before:content-['<p>'] after:block after:-translate-x-10 after:font-mono after:text-lg after:font-normal after:not-italic after:text-base-200 after:content-['</p>']">
         <p>
           <span className="text-primary">Delhi Technical Campus</span> proudly
-          presents its internal hackathon named as DTCHACKS, an event crafted
-          exclusively for the ingenious minds within our campus. Organized by
+          presents its Codeathon, an event crafted
+          exclusively for the ingenious minds within the campus. Organized by
           the collaborative efforts of technical societies and technical
-          coordinators. This hackathon is a testament to our commitment to
-          fostering innovation and technical prowess among DTC students.
+          coordinators. This codeathon is a testament to our commitment to
+          fostering innovation and technical prowess among students.
         </p>
         <p>
           Powered by Collaboration: Join us in this thrilling endeavour where
@@ -30,10 +30,10 @@ const InfoSection: FC = () => {
 
         <p>
           This hackathon is your chance to showcase your skills, creativity, and
-          problem-solving abilities. Exclusively for DTC students, it's a
+          problem-solving abilities. Exclusively for Students, it's a
           platform where you can connect with like-minded peers, push your
           boundaries, and embark on a journey of coding excellence. Let's code
-          the future together at the DTC Hackathon! ✨
+          the future together at the Codeathon! ✨
         </p>
       </article>
     </div>

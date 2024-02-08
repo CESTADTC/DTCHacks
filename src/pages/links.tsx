@@ -27,7 +27,7 @@ const Links: NextPage = () => {
           Delhi Technical Campus
         </h1>
         <h2 className="mt-3 font-mono font-semibold lowercase text-primary">
-          Internal Hackathon of Delhi Technical Campus
+          Codeathon of Delhi Technical Campus
         </h2>
         <div className="mt-5">
           <AllLinksTag />
