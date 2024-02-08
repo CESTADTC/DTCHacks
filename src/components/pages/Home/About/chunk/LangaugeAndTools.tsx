@@ -34,6 +34,7 @@ const LangaugeAndTools: FC = () => {
       </Heading3>
 
       <div className="mt-5 p-3 pl-0" style={{ height: '800px' }}>
+
         <div ref={scrollContainerRef} className='overflow-y-auto h-full'>
           <ul className=" flex flex-wrap justify-center gap-12 md:gap-7">
             {AppIcons.map(({ key, path, name }) => (

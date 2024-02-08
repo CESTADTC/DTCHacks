@@ -83,7 +83,7 @@ const Projects: FC = () => {
             className={`${styles.projectImg} group relative mx-auto aspect-square h-[20rem] rounded-full lg:h-[30rem]`}
           >
             <Image
-              src="/assets/images/innovation.jpg"
+              src="/assets/images/Innovation.jpg"
               alt="HeroImg"
               className="rounded-full object-cover"
               layout="fill"
