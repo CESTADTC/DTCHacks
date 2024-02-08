@@ -45,7 +45,7 @@ const SecModal: FC<{ handleClose: () => void }> = ({ handleClose }) => {
           You have been on these page for last 15 seconds. Thank you{' '}
         </p>
         <p className="mt-10 max-w-2xl text-sm">
-          <span className="text-primary">NOTE: </span> Are you a student at DELHI TECHNICAL CAMPUS? If not, ahh sorry, you're a little bit early. We are organizing a hackathon for inter-college students in upcoming February. This Hackathon is just for the students of Delhi Technical Campus. Stay Tuned!!
+          {/* <span className="text-primary">NOTE: </span> Are you a student at DELHI TECHNICAL CAMPUS? If not, ahh sorry, you're a little bit early. We are organizing a hackathon for inter-college students in upcoming February. This Hackathon is just for the students of Delhi Technical Campus. Stay Tuned!! */}
           <br />
           <br />
           <a

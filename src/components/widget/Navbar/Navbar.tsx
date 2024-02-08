@@ -34,10 +34,10 @@ const Navbar: FC = () => {
           className="layout relative z-50 mx-auto flex h-[95px] items-center justify-between px-3 sm:h-[127px]"
           id="navbar"
         >
-          <div className="relative flex items-center justify-center font-RobotoCondensed text-[3rem] font-bold italic outline-none md:text-[5rem]">
+          <div className="relative flex items-center justify-center font-RobotoCondensed text-[3rem] font-bold italic outline-none md:text-[3rem]">
             <a href="#" className="outline-none">
-              DTC
-              <span className="text-primary">Hacks</span>
+              Code-A
+              <span className="text-primary">-Thon</span>
             </a>
           </div>
           <ul className=" hidden gap-4 sm:flex">

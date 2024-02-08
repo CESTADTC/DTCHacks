@@ -11,7 +11,7 @@ const DownloadCV: FC = () => {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
 
-    const googleFormsUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfp3PKiCkO5gIeE-zmierH5BuTt9UDnkkz_npzIZjwrN1MVwQ/viewform?pli=1';
+    const googleFormsUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfCxO5ZrbH6ht47GqQH2Oyc4aSf7DGDePjkIGecmmc9jKFwlQ/viewform';
     const newWindow = window.open(googleFormsUrl, "_blank")
 
     if(newWindow){

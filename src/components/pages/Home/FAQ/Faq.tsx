@@ -27,7 +27,7 @@ const faqs = [
     id: 4,
     question: 'Q: Can individuals register, or is it only for teams?',
     answer:
-      'A: DTCHacks is a team-based event. Each team should comprise a minimum of 4 members, including the team leader.',
+      'A: This Codeathon is a team-based event. Each team should comprise a minimum of 4 members, including the team leader.',
   },
   {
     id: 5,
